@@ -1,5 +1,4 @@
 require 'bundler/setup'
-require 'stove/rake_task'
 
 namespace :style do
   require 'rubocop/rake_task'
@@ -19,6 +18,3 @@ desc 'Run all style checks'
 task style: ['style:chef', 'style:ruby']
 
 task default: %w(style)
-
-# Publish
-Stove::RakeTask.new
