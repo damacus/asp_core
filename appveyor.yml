@@ -31,6 +31,5 @@ build_script:
   - bundle install
 
 test_script:
-  - bundle exec rake rubocop
-  - bundle exec rake foodcritic
+  - bundle exec rake style
   - bundle exec kitchen verify
