@@ -7,3 +7,5 @@ long_description 'Installs/Configures asp_core'
 version '0.1.0'
 issues_url 'https://github.com/damacus/asp_core/issues'
 source_url 'https://github.com/damacus/asp_core'
+
+depends 'iis'
