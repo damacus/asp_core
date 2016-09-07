@@ -10,8 +10,7 @@ service 'W3SVC' do
   action :nothing
 end
 
-package 'Microsoft ASP.NET Core Module' do
-  provider Chef::Provider::Package::Windows
+windows_package 'Microsoft ASP.NET Core Module' do
   source node['asp_net_core']['installer_url']
   checksum node['asp_net_core']['checksum']
   name 'Microsoft ASP.NET Core Module'
