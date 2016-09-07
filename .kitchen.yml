@@ -1,12 +1,9 @@
 ---
-# driver:
-#   name: ec2
-#
-# provisioner:
-#   name: chef_solo
-#
+provisioner:
+  name: chef_solo
+
 platforms:
-  - name: windows2012r2
+  - name: windows-2012r2
 
 verifier:
   name: inspec
