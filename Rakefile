@@ -19,6 +19,3 @@ desc 'Run all style checks'
 task style: ['style:chef', 'style:ruby']
 
 task default: %w(style)
-
-# Publish
-Stove::RakeTask.new
