@@ -2,10 +2,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/3ms55pmyw5l1k49b/branch/master?svg=true)](https://ci.appveyor.com/project/damacus/asp-core/branch/master)
 
 This cookbook
-- Installs the [.Net Core ](https://www.appveyor.com/docs/deployment/agent#installing-appveyor-deployment-agent)
-- [Triggers a deployment](https://www.appveyor.com/docs/api/environments-deployments#start-deployment) from the Appveyor API
-
-It does not install IIS or any other related services.
+- Installs .Net Core Server Hosting Bundle and dependencies (IIS)
 
 ## Requirements
 ### Chef
