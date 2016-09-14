@@ -1,4 +1,4 @@
 # rubocop:disable LineLength
-default['asp_net_core']['installer_url'] = 'http://download.microsoft.com/download/A/3/8/A38489F3-9777-41DD-83F8-2CBDFAB2520C/DotNetCore.1.0.0-WindowsHosting.exe '
-default['asp_net_core']['checksum'] = '3bc116bc4d5f6be554264a7d2998b31999c5a22b6e22c313aa1619d591a20133'
+default['asp_net_core']['installer_url'] = 'https://download.microsoft.com/download/5/5/7/557D02A5-C3D0-4EF6-A570-4F75CD0DA5BF/DotNetCore.1.0.1-WindowsHosting.exe'
+default['asp_net_core']['checksum'] = '37f5478bad41f4534830aeceebfc42a1b87ce4e60dccde2552bec91c2371a7fa'
 # rubocop:enable LineLength
