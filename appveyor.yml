@@ -5,15 +5,15 @@ environment:
   winrm_user: test_user
   winrm_pass: Pass@word1
   winrm_port: 5985
-  KITCHEN_YAML: c:\GitHub\link-chef\.kitchen.appveyor.yml
-  SSL_CERT_FILE: c:\GitHub\link-chef\certs.pem
+  KITCHEN_YAML: c:\GitHub\cookbook\.kitchen.appveyor.yml
+  SSL_CERT_FILE: c:\GitHub\cookbook\certs.pem
   appveyor_access_key: thisisnotakey
   user_password: Pass@word1
 
   matrix:
   - ruby_version: "23"
 
-clone_folder: c:\GitHub\link-chef
+clone_folder: c:\GitHub\cookbook
 clone_depth: 1
 
 install:
@@ -22,7 +22,7 @@ install:
   - ps: $env:PATH="C:\Ruby$env:ruby_version\bin;$env:PATH"
   - ps: Write-Host $env:PATH
   - ps: gem install bundler --quiet --no-ri --no-rdoc
-  - ps: Invoke-WebRequest -Uri http://curl.haxx.se/ca/cacert.pem -OutFile c:\GitHub\link-chef\certs.pem
+  - ps: Invoke-WebRequest -Uri http://curl.haxx.se/ca/cacert.pem -OutFile c:\GitHub\cookbook\certs.pem
   - ps: ruby --version
   - ps: gem environment 
   - ps: bundler --version
