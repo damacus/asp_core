@@ -29,6 +29,7 @@ install:
 
 build_script:
   - bundle install
+  - bundle show berkshelf
 
 test_script:
   - bundle exec rake style
@@ -36,4 +37,4 @@ test_script:
 
 cache: 
   - C:\Users\TEST_U~1\AppData\Local\Temp\chef-client-12.16.42-1-x64.msi -> appveyor.yml
-  - 
+  - C:/Users/appveyor/.gem/ruby/2.3.0 -> Gemfile 
