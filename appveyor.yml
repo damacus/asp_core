@@ -11,7 +11,7 @@ environment:
   user_password: Pass@word1
 
   matrix:
-  - ruby_version: "22"
+  - ruby_version: "23"
 
 clone_folder: c:\GitHub\link-chef
 clone_depth: 1
@@ -24,7 +24,7 @@ install:
   - ps: gem install bundler --quiet --no-ri --no-rdoc
   - ps: Invoke-WebRequest -Uri http://curl.haxx.se/ca/cacert.pem -OutFile c:\GitHub\link-chef\certs.pem
   - ps: ruby --version
-  - ps: gem --version
+  - ps: gem environment 
   - ps: bundler --version
 
 build_script:
@@ -33,3 +33,7 @@ build_script:
 test_script:
   - bundle exec rake style
   - bundle exec kitchen verify
+
+cache: 
+  - C:\Users\TEST_U~1\AppData\Local\Temp\chef-client-12.16.42-1-x64.msi -> appveyor.yml
+  - 
