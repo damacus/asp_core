@@ -23,4 +23,3 @@ powershell_script 'Reset IIS' do
   EOH
   action :nothing
 end
-
