@@ -8,7 +8,7 @@ include_recipe 'iis::default'
 
 windows_package 'Microsoft ASP.NET Core Module' do
   source node['asp_net_core']['installer_url']
-  checksum node['asp_net_core']['checksum']
+  checksum node['asp_net_core']['checksum'] if node['asp_net_core']['checksum']
   name 'Microsoft ASP.NET Core Module'
   installer_type :custom
   options '/quiet OPT_INSTALL_REDIST=0'
