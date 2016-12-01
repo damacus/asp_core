@@ -25,4 +25,4 @@ node['asp_net_core']['installer_url']
 node['asp_net_core']['checksum']
 ```
 
-2 ) Submit a PR to correct this for the latest stable version.
+2) Submit a PR to correct this for the latest stable version.
