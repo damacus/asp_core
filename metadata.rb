@@ -7,6 +7,6 @@ long_description 'Installs/Configures asp_core'
 issues_url 'https://github.com/damacus/asp_core/issues'
 source_url 'https://github.com/damacus/asp_core'
 supports 'windows'
-version '0.1.5'
+version '0.1.6'
 
 depends 'iis'
